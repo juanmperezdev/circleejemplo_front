@@ -26,6 +26,8 @@ jobs:
             cd /home/ubuntu/frontend/circleejemplo_front
             git pull origin main
             npm run build
+            sudo cp -r dist/* /var/www/test1
+            sudo chown www-data:www-data /var/www/test1
             EOF
 
 workflows:
